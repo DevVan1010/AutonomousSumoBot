@@ -122,7 +122,7 @@ Arduino Nano
 This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
 ## Code
-The full source code for the Autonomous Sumo Bot can be found in the file [Control.ino](**Control.ino**) in this repository.
+The full source code for the Autonomous Sumo Bot can be found in the file [**Control.ino**](Control.ino) in this repository.
 
 ---
 
