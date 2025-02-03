@@ -118,6 +118,12 @@ Arduino Nano
    - **IR Sensors**: Place the robot near a black line to ensure it reverses and turns away.
    - **Button**: Ensure the robot starts only after the button is pressed and the **5-second delay** is complete.
 
+## License
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
+
+## Code
+The full source code for the Autonomous Sumo Bot can be found in the file [Control.ino](**Control.ino**) in this repository.
+
 ---
 
 🚀 **Enjoy building your Autonomous Sumo Bot!** 🤖
