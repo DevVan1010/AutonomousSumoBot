@@ -97,17 +97,26 @@ void loop() {
 }
 
 // Function to evade edge
-void evadeEdge(bool leftEdge) {
+void evadeEdge(bool leftEdge, bool rightEdge) {
   reverse(); // Reverse away from the edge
   delay(EDGE_DETECTED); // Reverse for 500ms
-  if (leftEdge) {
+
+  if (leftEdge && rightEdge) {
+    // If both edges are detected, turn around completely
+    turnRight(); // or turnLeft(); depending on desired behavior
+    delay(2 * EDGE_DETECTED); // Turn longer to fully escape
+  } 
+  else if (leftEdge) {
     turnRight(); // Turn right if left edge detected
-  } else {
+  } 
+  else if (rightEdge) {
     turnLeft(); // Turn left if right edge detected
   }
+
   delay(EDGE_DETECTED); // Turn for 500ms
   stopMotors(); // Stop motors after evading
 }
+
 
 // Movement functions
 void dashForward() {
